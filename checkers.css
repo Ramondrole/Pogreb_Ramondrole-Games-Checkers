@@ -1,0 +1,92 @@
+.checkers-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-bottom: 6px solid #b31b1b;
+    padding: 25px;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.5);
+}
+
+.mode-panel {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid #b31b1b;
+    color: #ffffff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1rem;
+    padding: 8px 25px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+}
+
+.mode-btn.active {
+    background: rgba(179, 27, 27, 0.2);
+    border-color: #b31b1b;
+}
+
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+canvas {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 1/1;
+    border: 3px solid #2a2a2a;
+    background: #0a0a0a;
+    cursor: pointer;
+    display: block;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.5);
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #2a2a2a;
+    color: #888899;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    margin-top: 15px;
+}
+
+.turn-indicator {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.new-game-btn {
+    background: #141414;
+    border: 2px solid #2a2a2a;
+    border-left: 6px solid #b31b1b;
+    color: #ffffff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1rem;
+    padding: 8px 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+
+.new-game-btn:hover {
+    transform: translate(-3px, -3px);
+    border-color: #b31b1b;
+    box-shadow: 9px 9px 0 rgba(179, 27, 27, 0.3);
+}
+
+@media (max-width: 500px) {
+    .checkers-wrapper { padding: 15px; }
+    .mode-btn { font-size: 0.8rem; padding: 6px 15px; }
+    .info-panel { flex-direction: column; gap: 10px; }
+    .new-game-btn { width: 100%; }
+}
